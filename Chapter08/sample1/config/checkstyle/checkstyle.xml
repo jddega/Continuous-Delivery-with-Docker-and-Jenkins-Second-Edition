@@ -6,9 +6,12 @@
 <module name="Checker">
      <module name="JavadocPackage"/>
      <module name="TreeWalker"> 
+          <module name="JavadocType">
+               <property name="scope" value="public"/>
            <module name="ConstantName">
              <property name="format" 
                value="[a-zA-Z\d]"/>
+          </module>
        </module>
      </module>
 </module>

@@ -6,7 +6,6 @@
 <module name="Checker">
      <module name="JavadocPackage"/>
      <module name="TreeWalker"> 
-           <module name="AvoidStarImport"/>
            <module name="ConstantName">
              <property name="format" 
                value="[a-zA-Z\d]"/>

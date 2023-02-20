@@ -8,6 +8,6 @@
      <module name="TreeWalker"> 
            <module name="AvoidStarImport"/>
            <module name="ConstantName"/>
-           <module name="EmptyBlock"/>
+             <property name="format" value="[a-zA-Z\d]"/>
      </module>
 </module>

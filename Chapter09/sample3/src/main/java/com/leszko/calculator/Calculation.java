@@ -36,7 +36,7 @@ public class Calculation {
 		this.createdAt = createdAt;
 	}
 
-	public String getDiv() {
+	public String getSum() {
 		return sum != null ? sum : result;
 	}
 	

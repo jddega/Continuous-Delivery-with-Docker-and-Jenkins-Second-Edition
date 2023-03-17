@@ -21,6 +21,7 @@ public class Calculation {
 	private String result;
 
 	private String sum;
+	private String div;
 
 	private Timestamp createdAt;
 
@@ -35,7 +36,18 @@ public class Calculation {
 		this.createdAt = createdAt;
 	}
 
-	public String getSum() {
+	public String getDiv() {
 		return sum != null ? sum : result;
+	}
+	public Calculation(String a, String b, String sum, Timestamp createdAt) {
+		this.a = a;
+		this.b = b;
+		this.div = div;
+		this.result = div;
+		this.createdAt = createdAt;
+	}
+
+	public String getDiv() {
+		return div != null ? div : result;
 	}
 }

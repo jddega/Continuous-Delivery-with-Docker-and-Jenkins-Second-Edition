@@ -39,7 +39,8 @@ public class Calculation {
 	public String getDiv() {
 		return sum != null ? sum : result;
 	}
-	public Calculation(String a, String b, String sum, Timestamp createdAt) {
+	
+	public Calculation(String a, String b, String div, Timestamp createdAt) {
 		this.a = a;
 		this.b = b;
 		this.div = div;

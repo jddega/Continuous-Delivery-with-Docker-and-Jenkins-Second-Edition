@@ -39,8 +39,28 @@ public class Calculation {
 	public String getSum() {
 		return sum != null ? sum : result;
 	}
-	
-	public Calculation(String a, String b, String div, Timestamp createdAt) {
+}
+
+@Entity
+public class Division {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+
+	private String a;
+
+	private String b;
+
+	private String result;
+
+	private String div;
+
+	private Timestamp createdAt;
+
+	protected Calculation() {
+	}
+
+	public Division(String a, String b, String div, Timestamp createdAt) {
 		this.a = a;
 		this.b = b;
 		this.div = div;

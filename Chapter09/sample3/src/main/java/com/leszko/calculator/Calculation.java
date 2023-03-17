@@ -35,7 +35,7 @@ public class Calculation {
 		this.sum = sum;
 		this.div = div;
 		this.result = sum;
-		this.result = div
+		this.result = div;
 		this.createdAt = createdAt;
 	}
 

@@ -21,6 +21,7 @@ public class Calculation {
 	private String result;
 
 	private String sum;
+	
 	private String div;
 
 	private Timestamp createdAt;
@@ -28,46 +29,19 @@ public class Calculation {
 	protected Calculation() {
 	}
 
-	public Calculation(String a, String b, String sum, Timestamp createdAt) {
+	public Calculation(String a, String b, String sum, String div, Timestamp createdAt) {
 		this.a = a;
 		this.b = b;
 		this.sum = sum;
+		this.div = div;
 		this.result = sum;
+		this.result = div
 		this.createdAt = createdAt;
 	}
 
 	public String getSum() {
 		return sum != null ? sum : result;
 	}
-}
-
-@Entity
-public class Division {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
-
-	private String a;
-
-	private String b;
-
-	private String result;
-
-	private String div;
-
-	private Timestamp createdAt;
-
-	protected Division() {
-	}
-
-	public Division(String a, String b, String div, Timestamp createdAt) {
-		this.a = a;
-		this.b = b;
-		this.div = div;
-		this.result = div;
-		this.createdAt = createdAt;
-	}
-
 	public String getDiv() {
 		return div != null ? div : result;
 	}

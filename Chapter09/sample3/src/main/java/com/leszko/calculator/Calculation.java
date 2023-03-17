@@ -57,7 +57,7 @@ public class Division {
 
 	private Timestamp createdAt;
 
-	protected Calculation() {
+	protected Division() {
 	}
 
 	public Division(String a, String b, String div, Timestamp createdAt) {

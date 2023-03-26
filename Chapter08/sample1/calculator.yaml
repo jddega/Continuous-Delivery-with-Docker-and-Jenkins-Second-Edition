@@ -6,11 +6,6 @@ metadata:
     app: calculator
 spec:
   replicas: 2
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxUnavailable: 25%
-      maxSurge: 0
   selector:
     matchLabels:
       app: calculator
